@@ -30,7 +30,7 @@ const Greetings = () => {
 						<div className="col px-0">
 							<Row>
 								<Col lg="6">
-									<h1 className="display-3 text-white">
+									<h1 className="display-2 text-white" style={{marginTop: 80}}>
 										{greetings.title + " "}
 									</h1>
 									<p className="lead text-white">

@@ -19,33 +19,32 @@ export default function Home({ githubProfileData }) {
 		<div>
 			<SEO
 				data={{
-					title: "Hanzla Tauqeer",
+					title: "Yatharth Vyas",
 					description:
-						"A passionate Full Stack Web Developer and Mobile App Developer.",
-					image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
-					url: "https://developer-portfolio-1hanzla100.vercel.app",
+						"Writing code to help people.",
+					image: "https://lh3.googleusercontent.com/ogw/ADea4I7sm8tDWGQ_S5qcD6LLLqIQpj13nLmvc2tDyXeb4A=s192-c-mo",
+					url: "https://yatharthvyas.github.io/",
 					keywords: [
-						"Hanzla",
-						"Hanzla Tauqeer",
-						"@1hanzla100",
-						"1hanzla100",
+						"Yatharth Vyas",
+						"Yatharth",
+						"@YatharthVyas",
+						"YatharthVyas",
 						"Portfolio",
-						"Hanzla Portfolio ",
-						"Hanzla Tauqeer Portfolio",
+						"Yatharth Vyas Portfolio ",
 						"web developer",
 						"full stack",
 						"full stack web developer",
 						"mobile app developer",
 						"android developer",
-						"django",
 						"flask",
-						"django rest framework",
 						"nodejs ",
 						"expressjs",
 						"reactjs ",
 						"contextapi",
 						"redux",
-						"flutter",
+						"reactnative",
+						"google summer of code",
+						"gsoc"
 					],
 				}}
 			/>

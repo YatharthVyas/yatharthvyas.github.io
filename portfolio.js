@@ -1,31 +1,31 @@
 import emoji from "react-easy-emoji";
 
 export const greetings = {
-	name: "Hanzla Tauqeer",
-	title: "Hi all, I'm Hanzla",
+	name: "Yatharth Vyas",
+	title: "Hi all, I'm Yatharth",
 	description:
-		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
-	resumeLink: "https://cv.hanzla.ga",
+		"I build stuff that people use.",
+	resumeLink: "https://drive.google.com/drive/u/0/folders/1QOmU79yxiofLBrZ-EjraY9VVxj7nSTPB",
 };
 
 export const openSource = {
-	githubUserName: "1hanzla100",
+	githubUserName: "YatharthVyas",
 };
 
 export const contact = {};
 
 export const socialLinks = {
-	facebook: "https://www.facebook.com/1hanzla100",
-	instagram: "https://www.instagram.com/1hanzla100",
-	twitter: "https://twitter.com/1hanzla100",
-	github: "https://github.com/1hanzla100",
-	linkedin: "https://www.linkedin.com/in/hanzla-tauqeer-0869281ba/",
+	facebook: "https://www.facebook.com/yatharth.vyas",
+	instagram: "https://www.instagram.com/yatharthvyas/",
+	twitter: "https://twitter.com/YatharthV2000",
+	github: "https://github.com/YatharthVyas",
+	linkedin: "https://www.linkedin.com/in/yatharthvyas/",
 };
 
 export const skillsSection = {
 	title: "What I do",
 	subTitle:
-		"CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+		"With the goal of exploring every corner of Computer Science, I am executing an infinite loop of learning:",
 	skills: [
 		emoji(
 			"⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -40,15 +40,15 @@ export const skillsSection = {
 
 	softwareSkills: [
 		{
-			skillName: "html-5",
+			skillName: "HTML-5",
 			fontAwesomeClassname: "vscode-icons:file-type-html",
 		},
 		{
-			skillName: "css3",
+			skillName: "CSS-3",
 			fontAwesomeClassname: "vscode-icons:file-type-css",
 		},
 		{
-			skillName: "sass",
+			skillName: "SASS",
 			fontAwesomeClassname: "logos:sass",
 		},
 		{
@@ -60,52 +60,68 @@ export const skillsSection = {
 			fontAwesomeClassname: "logos:typescript-icon",
 		},
 		{
-			skillName: "reactjs",
+			skillName: "ReactJs",
 			fontAwesomeClassname: "vscode-icons:file-type-reactjs",
 		},
 		{
-			skillName: "nodejs",
+			skillName: "Nodejs",
 			fontAwesomeClassname: "logos:nodejs-icon",
 		},
 		{
-			skillName: "flutter",
-			fontAwesomeClassname: "logos:flutter",
-		},
-		{
-			skillName: "swift",
-			fontAwesomeClassname: "vscode-icons:file-type-swift",
+			skillName: "ReactNative",
+			fontAwesomeClassname: "vscode-icons:file-type-reactjs",
 		},
 		{
 			skillName: "npm",
 			fontAwesomeClassname: "vscode-icons:file-type-npm",
 		},
 		{
-			skillName: "sql-database",
+			skillName: "SQL-Databases",
 			fontAwesomeClassname: "vscode-icons:file-type-sql",
 		},
 		{
-			skillName: "mongoDB",
+			skillName: "MongoDB",
 			fontAwesomeClassname: "vscode-icons:file-type-mongo",
 		},
 		{
-			skillName: "aws",
+			skillName: "Amazon-Web-Services",
 			fontAwesomeClassname: "logos:aws",
 		},
 		{
-			skillName: "firebase",
+			skillName: "Firebase",
 			fontAwesomeClassname: "logos:firebase",
 		},
 		{
-			skillName: "python",
+			skillName: "Python",
 			fontAwesomeClassname: "logos:python",
 		},
 		{
-			skillName: "git",
+			skillName: "Git",
 			fontAwesomeClassname: "logos:git-icon",
 		},
 		{
-			skillName: "docker",
+			skillName: "Docker",
 			fontAwesomeClassname: "logos:docker-icon",
+		},
+		{
+			skillName: "CPP",
+			fontAwesomeClassname: "vscode-icons:file-type-cpp",
+		},
+		{
+			skillName: "C",
+			fontAwesomeClassname: "vscode-icons:file-type-c",
+		},
+		{
+			skillName: "PHP",
+			fontAwesomeClassname: "logos:php",
+		},
+		{
+			skillName: "Joomla",
+			fontAwesomeClassname: "logos:joomla",
+		},
+		{
+			skillName: "Rust",
+			fontAwesomeClassname: "logos:rust",
 		},
 	],
 };
@@ -127,32 +143,35 @@ export const SkillBars = [
 
 export const educationInfo = [
 	{
-		schoolName: "Harvard University",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
+		weight: 1,
+		schoolName: "Dwarkadas J. Sanghvi College of Engineering",
+		subHeader: "Bachelor of Engineering in Computer Science",
+		duration: "July 2018 - June 2022",
+		desc: "Participated in the research of Distributed Systems & Big Data and published 2 papers.",
 		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"9.83 of 10.00 GPA upto 6th Semester",
+			"Lead @ DJ Unicode (tech club).",
+			"Mentored 100+ students",
 		],
 	},
 	{
-		schoolName: "Harvard",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
+		schoolName: "Sathaye College",
+		subHeader: "Higher Secondary School (HSC)",
+		duration: "August 2016 - May 2018",
+		desc: "Only student to score 100/100 in Mathematics.",
 		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetfgur adipiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"89.47% Overall",
+			"Specialization in Computer Science"
 		],
 	},
 	{
-		schoolName: "Stanford University",
-		subHeader: "Bachelor of Science in Computer Science",
-		duration: "September 2013 - April 2017",
-		desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+		schoolName: "Lilavatibai Podar School",
+		subHeader: "Indian Certificate of Secondary Education (ICSE)",
+		duration: "Till April 2016",	
+		desc: "Ranked among top 10% in the school.",
 		descBullets: [
-			"Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit",
+			"93.80% Best of 5",
+			"93.50% Overall"
 		],
 	},
 ];
@@ -209,10 +228,5 @@ export const feedbacks = [
 		name: "Hassan Mehmood",
 		feedback:
 			"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with the customer service at Hanzla tauqeer has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on daily reports so we know how our site is doing. I would recommend that u have choose hanzla web developer services for u.",
-	},
-	{
-		name: "Maheen Altaf",
-		feedback:
-			"the website is very nice, everything was perfectly made as i need. it just loads in moments, without giving u the chance to wait. the quality is also very amazing. i am using it without any problem. great job",
-	},
+	}
 ];
