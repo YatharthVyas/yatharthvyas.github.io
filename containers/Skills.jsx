@@ -9,7 +9,7 @@ import { skillsSection } from "../portfolio";
 const Skills = () => {
 	return (
 		<Fade bottom duration={1000} distance="40px">
-			<Container className="text-center my-5 section section-lg">
+			<Container className="text-center my-5 section">
 				<h1 className="h1">{skillsSection.title}</h1>
 				<p className="lead">{skillsSection.subTitle}</p>
 				<Row>
@@ -17,7 +17,7 @@ const Skills = () => {
 						<DisplayLottie animationPath="/lottie/webdev.json" />
 					</Col>
 					<Col lg="6">
-						<div className="d-flex justify-content-center flex-wrap mb-5">
+						<div className="d-flex justify-content-center flex-wrap mb-5" style={{marginTop: 80}}>
 							{skillsSection.softwareSkills.map((skill) => {
 								return (
 									<Fragment key={skill.skillName}>
@@ -44,11 +44,11 @@ const Skills = () => {
 								);
 							})}
 						</div>
-						<div>
+						{/* <div>
 							{skillsSection.skills.map((skill) => {
 								return <p key={skill}>{skill}</p>;
 							})}
-						</div>
+						</div> */}
 					</Col>
 				</Row>
 			</Container>

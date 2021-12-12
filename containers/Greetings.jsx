@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { greetings } from "../portfolio";
-
 import { Button, Container, Row, Col } from "reactstrap";
 
 import GreetingLottie from "../components/DisplayLottie";
@@ -10,7 +9,59 @@ const Greetings = () => {
 	useEffect(() => {
 		document.documentElement.scrollTop = 0;
 		document.scrollingElement.scrollTop = 0;
-	});
+		const script = document.createElement("script");
+		script.src = "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js";
+		script.async = true;
+		script.onload = () => {
+			var textWrapper = document.querySelector('.ml11 .letters');
+			textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+			window.anime.timeline({loop: false})
+			.add({
+				targets: '.ml11 .line',
+				scaleY: [0,1],
+				opacity: [0.5,1],
+				easing: "easeOutExpo",
+				duration: 700
+			})
+			.add({
+				targets: '.ml11 .line',
+				translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+				easing: "easeOutExpo",
+				duration: 700,
+				delay: 100
+			}).add({
+				targets: '.ml11 .letter',
+				opacity: [0,1],
+				easing: "easeOutExpo",
+				duration: 600,
+				offset: '-=775',
+				delay: (el, i) => 34 * (i+1)
+			}).add({
+				targets: '.line',
+				opacity: 0,
+				duration: 1000,
+				easing: "easeOutExpo",
+				delay: 1000
+			});
+
+
+			var textWrappers = document.querySelector('.ml2');
+			textWrappers.innerHTML = textWrappers.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+			window.anime.timeline({loop: false})
+			.add({
+			targets: '.ml2 .letter',
+			scale: [4,1],
+			opacity: [0,1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 950,
+			delay: (el, i) => 70*i
+			});
+		}
+	document.body.appendChild(script);
+	},[]);
 	return (
 		<main>
 			<div className="position-relative">
@@ -30,11 +81,18 @@ const Greetings = () => {
 						<div className="col px-0">
 							<Row>
 								<Col lg="6">
-									<h1 className="display-2 text-white" style={{marginTop: 80}}>
-										{greetings.title + " "}
-									</h1>
+									<div className="text-white" style={{marginTop: 80}}>
+										<h1 className="ml2">Yatharth Vyas</h1>
+									</div>
 									<p className="lead text-white">
-										{greetings.description}
+
+									<h6 className="ml11">
+										<span className="text-wrapper">
+											<span className="line line1"></span>
+											<span className="letters text-white">{greetings.description}</span>
+										</span>
+									</h6>
+										
 									</p>
 									<SocialLinks />
 									<div className="btn-wrapper my-4">

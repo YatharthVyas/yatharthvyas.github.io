@@ -26,14 +26,15 @@ const ExperienceCard = ({ data }) => {
 					<Color src={data.companylogo} format="hex">
 						{(color) => (
 							<CardHeader style={{ background: color.data }}>
-								<h5 className="text-white">{data.company}</h5>
+								<h5 className={data.company.includes("NK Learnicare") ? "" : "text-white"}>{data.company}</h5>
 							</CardHeader>
 						)}
 					</Color>
 					<CardBody className="py-5">
-						<div
+					<div display="flex" style={{flexDirection: "row"}}>
+						<span
 							className="bg-white rounded-circle mb-3 img-center img-fluid shadow-lg "
-							style={{ width: "100px", height: "100px" }}
+							style={{ width: "100px", height: "100px", flex: 1 , display: "inline-block" }}
 						>
 							<Image
 								src={data.companylogo}
@@ -41,7 +42,22 @@ const ExperienceCard = ({ data }) => {
 								height={"100px"}
 								alt={data.companylogo}
 							/>
-						</div>
+						</span>
+
+						{data.companylogo2 &&
+						<span
+							className="bg-white rounded-circle mb-3 img-center img-fluid shadow-lg "
+							style={{ width: "100px", height: "100px", flex: 1, display: "inline-block", marginLeft: "10px" }}
+						>
+							<Image
+								src={data.companylogo2}
+								width={"100px"}
+								height={"100px"}
+								alt={data.companylogo2}
+							/>
+							</span>
+}
+							</div>
 						<CardTitle tag="h5">{data.role}</CardTitle>
 						<CardSubtitle>{data.date}</CardSubtitle>
 						<CardText className="description my-3 text-left">
@@ -49,10 +65,12 @@ const ExperienceCard = ({ data }) => {
 							<ul>
 								{data.descBullets
 									? data.descBullets.map((desc) => {
-											return <li key={desc}>{desc}</li>;
+											return <li key={desc}  dangerouslySetInnerHTML={{ __html: desc}}></li>;
 									  })
 									: null}
 							</ul>
+							{data.company.includes("Joomla") && <div>Know more about my work by visiting <u><a href="https://github.com/joomla-projects/gsoc21_core-enhancements/blob/GSoC-21-readme/README_GSoC.md">here</a></u></div>}
+
 						</CardText>
 					</CardBody>
 				</Card>

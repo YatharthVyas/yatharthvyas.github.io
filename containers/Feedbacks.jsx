@@ -1,7 +1,7 @@
-import { feedbacks } from "../portfolio";
+import { research } from "../portfolio";
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
-import FeedbackCard from "../components/FeedbackCard";
+import ResearchCard from "../components/ResearchCard";
 import { Fade } from "react-reveal";
 
 const Feedbacks = () => {
@@ -17,15 +17,15 @@ const Feedbacks = () => {
 						</div>
 						<div className="pl-4">
 							<h4 className="display-3 text-info">
-								Our Clients Feedback
+								Research Experience
 							</h4>
 						</div>
 					</div>
 					<Row className="row-grid align-items-center">
-						{feedbacks.map((data, i) => {
+						{research.map((data, i) => {
 							return (
 								<Col key={i} lg={6}>
-									<FeedbackCard data={data} />
+									<ResearchCard data={data} />
 								</Col>
 							);
 						})}

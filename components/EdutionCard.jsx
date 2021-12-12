@@ -1,15 +1,17 @@
 import React from "react";
 import { Card, CardBody, Badge } from "reactstrap";
-
+import Tilt from 'react-tilt'
 import { Fade } from "react-reveal";
+
 
 const EdutionCard = ({ education }) => {
 	return (
 		<Fade left duration={1000} distance="40px">
-			<Card className="card-lift--hover shadow mt-4">
+			<Tilt className="Tilt" options={{ max : 25 }} >
+			<Card className="shadow mt-4">
 				<CardBody>
-					<div className="d-flex px-3">
-						<div className="pl-4">
+					<div className="d-flex px-2">
+						<div className="pl-2">
 							<h5 className="text-info">
 								{education.schoolName}
 							</h5>
@@ -29,6 +31,7 @@ const EdutionCard = ({ education }) => {
 					</div>
 				</CardBody>
 			</Card>
+			</Tilt>
 		</Fade>
 	);
 };

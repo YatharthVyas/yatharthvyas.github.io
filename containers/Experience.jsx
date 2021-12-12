@@ -8,7 +8,7 @@ import ExperienceCard from "../components/ExperienceCard";
 
 const Experience = () => {
 	return (
-		<section className="section section-lg">
+		<section className="section section-lg" style={{paddingBottom: 0}}>
 			<Container>
 				<Fade bottom duration={1000} distance="40px">
 					<div className="d-flex p-4">
@@ -21,7 +21,7 @@ const Experience = () => {
 							<h4 className="display-3 text-info">Experience</h4>
 						</div>
 					</div>
-					<Row className="row-grid align-items-center">
+					<Row className="row-grid align-items-stretch">
 						{experience.map((data, i) => {
 							return <ExperienceCard key={i} data={data} />;
 						})}

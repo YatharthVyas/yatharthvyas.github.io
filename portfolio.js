@@ -2,10 +2,10 @@ import emoji from "react-easy-emoji";
 
 export const greetings = {
 	name: "Yatharth Vyas",
-	title: "Hi all, I'm Yatharth",
+	title: "Yatharth Vyas",
 	description:
-		"I build stuff that people use.",
-	resumeLink: "https://drive.google.com/drive/u/0/folders/1QOmU79yxiofLBrZ-EjraY9VVxj7nSTPB",
+		"I build stuff that people use",
+	resumeLink: "https://drive.google.com/file/d/1xr77wY2opAzo9HhHjOcUByeY2Dt1YNUd",
 };
 
 export const openSource = {
@@ -178,29 +178,53 @@ export const educationInfo = [
 
 export const experience = [
 	{
-		role: "Software Engineer",
-		company: "Google",
-		companylogo: "/img/icons/common/google.svg",
-		date: "June 2018 – Present",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		role: "Software Engineering Intern",
+		company: "Mahamela Tech",
+		companylogo: "/img/icons/common/mahamela.jpeg",
+		date: "Aug 2021 – Present",
+		desc: "Optimized Performance and Developed features for the web and native application for the company using ReactNative, NodeJS, MongoDB, GCloud, Firebase and more.",
 		descBullets: [
-			"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"Developed a Bookkeeping Module for seller-customer ledger records and payments",
+			"Optimized Logo generation by porting the library used from pupeteer to sharp",
+			"Wrote complex SQL queries to substitute ORM calls for user analytics"
 		],
 	},
 	{
-		role: "Front-End Developer",
-		company: "Github",
-		companylogo: "/img/icons/common/github.svg",
-		date: "May 2017 – May 2018",
-		desc: "Lorem ipsum dolor sit amet, consefdctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		role: "Student Developer",
+		company: "Google Summer of Code @ Joomla!",
+		companylogo: "/img/icons/common/gsoc.png",
+		companylogo2: "/img/icons/common/joomla.png",
+		date: "May 2021 – Aug 2021",
+		desc: "What began with understanding the existing features of Joomla core phased into me enhancing them. This experience helped me learn the art of reading code and documentation that is overlooked by many. Being a long-established content management system, Joomla is written in legacy technologies which made my job equally challenging and interesting.",
+		descBullets: [
+			"Introduced 4 enhancements to the Joomla! core",
+			"Enhanced the UX of placing modules and selecting their positions.",
+			"Implemented workflows for Modules.",
+			"Refactored the MVC of Articles and Featured Articles to increase re-usability of components.",
+		]
 	},
 	{
-		role: "Software Engineer Intern",
-		company: "Airbnb",
-		companylogo: "/img/icons/common/airbnbLogo.png",
+		role: "Fullstack Developer",
+		company: "Carte",
+		companylogo: "/img/icons/common/carte.png",
+		date: "Nov 2020 – March 2021",
+		desc: "A contactless dining application for restaurants. The application is built using ReactJs, NodeJS, MongoDB and deployed using AWS.",
+		descBullets: [
+			"Developed a MERN Stack web application using Material-UI, formik, Pusherjs, and Context API and hosted it on AWS",
+			"Key features include QR Codes, Live Order Tracking, Payment Gateway, S3 Storage",
+			"Completed the first version of the product in the span of just 40 days and hence was invited to work on the second iteration"
+		]
+	},
+	{
+		role: "Web Development Intern",
+		company: "NK Learnicare",
+		companylogo: "/img/icons/common/nk.jpeg",
 		date: "Jan 2015 – Sep 2015",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		desc: "My work was mainly for a sister company, WriteSoft where I made websites for Freelance Clients. I built projects in a team of 4 where I was the FullStack developer.",
+		descBullets: [
+			"Developed a bulk SMS and email portal with credit system that can be distributed by Merchants to their organization users",
+			"Worked in a team of 4, directly reported to the Project Manager, and was a part of the sales Pitches."
+		]
 	},
 ];
 
@@ -223,10 +247,25 @@ export const projects = [
 	},
 ];
 
-export const feedbacks = [
+export const research = [
 	{
-		name: "Hassan Mehmood",
+		name: "Simple Network Simulator",
 		feedback:
-			"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with the customer service at Hanzla tauqeer has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on daily reports so we know how our site is doing. I would recommend that u have choose hanzla web developer services for u.",
+			"This paper has been accepted by 'IEEE 2022 7th International Conference for Convergence in Technology (I2CT), Pune' which has Ei Compendex and Scopus Indexing. It is about the implementation of a fully customizable network simulator that can be programmed using Javascript and JSON. It is designed to help researchers and professors in teaching concepts of Networks and Cyber Security with animated packet transfer",
+	},
+	{
+		name: "Simulation of a Distributed Architecture on a Single System using Nodes emulated by Docker containers:",
+		feedback:
+		"I'm a part of a group researching the simulation of a multi-node system using Linux’s namespaces through containers using Docker. Results obtained proved an optimization from 98 seconds on a single node to 45 seconds in a simulated multi-node configuration. The paper for the same is currently under work"
+	},
+	{
+		name: "Emulating Intel's 8086 Microprocessor using Rust and WASM",
+		feedback:
+		"This study presents various advantages of emulating an 8086 microprocessor using Rust and WASM and describes the technology and architecture involved behind one. The paper is currently under review."
+	},
+	{
+		name: "Infant Emotion Detection using a live audio-visual stream",
+		feedback:
+		"Currently Ongoing: We are working on a research project to detect emotions of infants. It involves gathering and merging several unique datasets followed by a meticulous process of analysis and interpretation involved due to the sensitive nature of the data."
 	}
 ];
