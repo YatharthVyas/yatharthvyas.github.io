@@ -19586,7 +19586,6 @@ span.flatpickr-weekday {
 
 .flatpickr-weekwrapper {
 	display: inline-block;
-	float: left;
 }
 
 .flatpickr-weekwrapper .flatpickr-weeks {
@@ -19717,7 +19716,6 @@ span.flatpickr-weekday {
 .flatpickr-time .flatpickr-am-pm {
 	height: inherit;
 	display: inline-block;
-	float: left;
 	line-height: inherit;
 	color: #393939;
 	font-weight: bold;
@@ -21204,7 +21202,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .color-swatch-header .pass-fail-item {
-	float: left;
 	display: inline-block;
 	text-align: center;
 	padding: 2px;
@@ -21290,7 +21287,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .table-colors .swatch,
 .table-colors:first-child .swatch {
-	float: left;
 	height: 40px;
 	width: 40px;
 	margin-right: 20px;
@@ -21306,7 +21302,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .table-colors .lozenge,
 .table-colors:first-child .lozenge {
-	float: left;
 	margin: 5px 10px 0 0;
 	font-size: 10px;
 	display: inline-block;

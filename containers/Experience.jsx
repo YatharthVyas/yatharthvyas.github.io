@@ -17,11 +17,11 @@ const Experience = () => {
 								<i className="ni ni-briefcase-24 text-info" />
 							</div>
 						</div>
-						<div className="pl-4">
+						<div className="pl-4" id="experience">
 							<h4 className="display-3 text-info">Experience</h4>
 						</div>
 					</div>
-					<Row className="row-grid align-items-stretch">
+					<Row className="row-grid align-items-stretch" style={{height: "100%", alignItems: "stretch"}}>
 						{experience.map((data, i) => {
 							return <ExperienceCard key={i} data={data} />;
 						})}

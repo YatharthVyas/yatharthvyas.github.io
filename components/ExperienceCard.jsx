@@ -17,11 +17,11 @@ import Image from "next/image";
 
 const ExperienceCard = ({ data }) => {
 	return (
-		<Col lg="4">
-			<Fade left duration={1000} distance="40px">
+		<Col lg="4" style={{height: "100% !important"}}>
+			<Fade left duration={1000} distance="40px" style={{height: "100% !important"}}>
 				<Card
-					style={{ flex: 1 }}
 					className="shadow-lg--hover shadow border-0 text-center rounded"
+					style={{ flex: 1, height: "100% !important" }}
 				>
 					<Color src={data.companylogo} format="hex">
 						{(color) => (

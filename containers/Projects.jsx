@@ -16,7 +16,7 @@ const Projects = () => {
 								<i className="ni ni-laptop text-info" />
 							</div>
 						</div>
-						<div className="pl-4">
+						<div className="pl-4" id="projects">
 							<h4 className="display-3 text-info">Projects</h4>
 						</div>
 					</div>

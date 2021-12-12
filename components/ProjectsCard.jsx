@@ -13,6 +13,11 @@ const ProjectsCard = ({ data }) => {
 						<div className="d-flex px-3">
 							<div className="pl-4">
 								<h3>{data.name}</h3>
+								{data.stacks?.map((stack, index) => (
+									<span key={index} className="badge badge-pill badge-secondary mr-2" style={{textTransform: "none"}}>
+										{stack}
+									</span>
+								))}
 								<p className="description mt-3">{data.desc}</p>
 								{data.github ? (
 									<Button

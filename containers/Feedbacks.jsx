@@ -15,7 +15,7 @@ const Feedbacks = () => {
 								<i className="fa fa-star text-info" />
 							</div>
 						</div>
-						<div className="pl-4">
+						<div className="pl-4" id="research">
 							<h4 className="display-3 text-info">
 								Research Experience
 							</h4>

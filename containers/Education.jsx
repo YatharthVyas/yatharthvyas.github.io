@@ -7,7 +7,7 @@ const Edution = () => {
 	return (
 		<section className="section pb-7 bg-gradient-info mt-5">
 			<Container>
-				<div className="d-flex px-3">
+				<div className="d-flex px-3" id="education">
 					<div>
 						<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
 							<i className="ni ni-books text-info" />

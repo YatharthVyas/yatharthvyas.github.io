@@ -231,6 +231,7 @@ export const experience = [
 export const projects = [
 	{
 		name: "lorem ipsum",
+		stacks: ["React", "NodeJS", "MongoDB"],
 		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 		link: "https://example.com",
 	},

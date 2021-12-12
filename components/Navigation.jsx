@@ -37,7 +37,7 @@ const Navigation = () => {
 					id="navbar-main"
 				>
 					<Container>
-						<NavbarBrand href="/" className="mr-lg-5">
+						<NavbarBrand href="#" className="mr-lg-5">
 							<h2 className="text-white" id="nav-title">
 								{greetings.name}
 							</h2>
@@ -81,7 +81,7 @@ const Navigation = () => {
 								className="align-items-lg-center ml-lg-auto"
 								navbar
 							>
-								<NavItem>
+								{/* <NavItem>
 									<NavLink
 										rel="noopener"
 										aria-label="Facebook"
@@ -150,7 +150,21 @@ const Navigation = () => {
 											Linkedin
 										</span>
 									</NavLink>
-								</NavItem>
+								</NavItem> */}
+								{['Education','Experience','Projects','Research','Contact'].map((item)=>{ 
+									return(
+										<NavItem key={item}>
+											<NavLink
+												rel="noopener"
+												aria-label={item}
+												className="nav-link-icon"
+												href={"#" + item.toLowerCase()}
+											>
+												{item}
+											</NavLink>
+										</NavItem>
+									)
+								})}
 							</Nav>
 						</UncontrolledCollapse>
 					</Container>
