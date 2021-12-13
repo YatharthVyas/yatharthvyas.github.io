@@ -1,0 +1,21 @@
+{
+  "short_name": "Yatharth Vyas",
+  "name": "Yatharth Vyas Portfolio",
+  "description": "I build stuff that helps people in their day to day work.",
+    "icons": [
+      {
+        "src": "./favicon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "./favicon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#11cdef",
+  "background_color": "#11cdef"
+}
