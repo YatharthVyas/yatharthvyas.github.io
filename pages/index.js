@@ -17,6 +17,9 @@ import SEO from "../components/SEO";
 export default function Home({ githubProfileData }) {
 	return (
 		<div>
+			<Head>
+				<link rel="shortcute icon" href={process.env.NEXT_PUBLIC_BASE_PATH + "/favicon.ico"} />
+			</Head>
 			<SEO
 				data={{
 					title: "Yatharth Vyas",

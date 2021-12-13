@@ -37,7 +37,7 @@ const ExperienceCard = ({ data }) => {
 							style={{ width: "100px", height: "100px", flex: 1 , display: "inline-block" }}
 						>
 							<img
-								src={data.companylogo}
+								src={process.env.baseAsset + data.companylogo}
 								width={"100px"}
 								height={"100px"}
 								alt={data.company}
@@ -50,7 +50,7 @@ const ExperienceCard = ({ data }) => {
 							style={{ width: "100px", height: "100px", flex: 1, display: "inline-block", marginLeft: "10px" }}
 						>
 							<img
-								src={data.companylogo2}
+								src={process.env.NEXT_PUBLIC_BASE_PATH + data.companylogo2}
 								width={"100px"}
 								height={"100px"}
 								alt={data.company}
