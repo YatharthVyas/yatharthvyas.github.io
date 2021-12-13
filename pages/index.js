@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import PropTypes from "prop-types";
+import Head from "next/head";
 const Navigation = dynamic(() => import("../components/Navigation"));
 const Greetings = dynamic(() => import("../containers/Greetings"));
 const Skills = dynamic(() => import("../containers/Skills"));
