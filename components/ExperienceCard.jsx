@@ -23,7 +23,7 @@ const ExperienceCard = ({ data }) => {
 					className="shadow-lg--hover shadow border-0 text-center rounded"
 					style={{ flex: 1, height: "100% !important" }}
 				>
-					<Color src={data.companylogo} format="hex">
+					<Color src={process.env.NEXT_PUBLIC_BASE_PATH + data.companylogo} format="hex">
 						{(color) => (
 							<CardHeader style={{ background: color.data }}>
 								<h5 className={data.company.includes("NK Learnicare") ? "" : "text-white"}>{data.company}</h5>
