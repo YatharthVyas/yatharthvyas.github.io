@@ -10,15 +10,21 @@ const ProjectsCard = ({ data }) => {
 			<Fade left duration={1000} distance="40px">
 				<Card className="shadow-lg--hover shadow mt-4">
 					<CardBody>
-						<div className="d-flex px-3">
-							<div className="pl-4">
+						<div className="d-flex px-2">
+							<div className="pl-3">
 								<h3>{data.name}</h3>
 								{data.stacks?.map((stack, index) => (
 									<span key={index} className="badge badge-pill badge-secondary mr-2" style={{textTransform: "none"}}>
 										{stack}
 									</span>
 								))}
-								<p className="description mt-3">{data.desc}</p>
+								<p className="description mt-3">{data.desc}
+								<ul style={{listStyleType: "square", marginLeft: -10}}>
+									{data.descBullets?.map((bullet, index) => (
+										<li key={index}>{bullet}</li>
+									))}
+								</ul>
+								</p>
 								{data.github ? (
 									<Button
 										className="btn-icon"

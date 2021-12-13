@@ -229,22 +229,71 @@ export const experience = [
 ];
 
 export const projects = [
+
 	{
-		name: "lorem ipsum",
-		stacks: ["React", "NodeJS", "MongoDB"],
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		link: "https://example.com",
+		name: "Infant Emotion Detection using Audio Vistual stream",
+		stacks: ["Python", "Tensorflow", "Keras", "OpenCV", "CVZone", "Transfer Learning"],
+		descBullets: [
+			"A multi-modal CNN to predict emotions of infants based on audio characteristics of their cry and a video stream",
+			"MFCC is used to extract audio frequencies and is then fed into an ANN.",
+			"Images are sampled from a video at 6 frames per second, augmented to increase dataset size and then used to train an ensemble of 6 Convoluted Neural Networks.",
+			"A total of 5 unique datasets collected from researchers have been combined for training and testing."
+		],
+	},
+
+	{
+		name: "Simulation of Distributed Architecture on a Single Node using Nodes emulated by Docker",
+		stacks: ["Docker", "Rust"],
+		descBullets: [
+			"Simulation of a multi node system using Linux’s namespaces through containers using Docker.", 
+			"Map reduce execution time for word count was optimized from 96s for a single node to 48s for emulated multi-node.",
+			"Can be configured to run other related big data algorithms that use a master-slave node architecture."
+		],
+		github: "https://github.com/YatharthVyas/MapReduce-with-Docker",
 	},
 	{
-		name: "lorem ipsum",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		github: "https://github.com/1hanzla100",
+		name: "Network Simulator",
+		stacks: ["Svelte", "SVG.js", "Vis.js", "JSON"],
+		desc: "This is a simple in browser network simulator, which can be used to visualize network graph and run specific logic code on packets.",
+		descBullets: [
+			"Simulate packet transmission with animations",
+			"Implementation of logic and packet queue of any given node is customizable by the user, which means that this can be used to simulate any network algorithm which can be coded using Javascript.",
+		],
+		link: "https://yjdoc2.github.io/Network-Simulator/",
+		github: "https://github.com/YatharthVyas/Network-Simulator",
+
+	}, 
+	{
+		name: "8086 Emulator Web",
+		stacks: ["ReactJs", "Web Assembly", "Rust"],
+		descBullets: [
+			"Emulates Intel 8086 instruction set and provides an interactive interpreter to run programs in native syntax line by line.",
+			"Error reporting & handling, code highlighting, and code execution is supported.",
+			"Runs without any backend/server and is completely client-side with zero hosting and maintainance required.",
+		],
+		link: "https://yjdoc2.github.io/8086-emulator-web/",
+		github: "https://github.com/YatharthVyas/8086-emulator-web-1",
 	},
 	{
-		name: "lorem ipsum",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		github: "https://github.com/1hanzla100",
-		link: "https://example.com",
+		name: "Digit Recognizer",
+		stacks: ["Web Assembly", "Rust", "JavaScript", "HTML-Canvas"],
+		descBullets: [
+			"Neural Network in Rust from scratch and trained over MNIST data, accuracy in the range of 95 to 96%",
+			"Compiled the Neural Network in Rust to Web Assembly and implemented a GUI interface to input to the digits drawing using canvas drawing.",
+			"The grayscale pixels are pre-processed in frontend, and fed to the Web Assembly for prediction."
+		],
+		github: "https://github.com/YatharthVyas/Rust-NN-Web-1",
+		link: "http://rust-nn-web.herokuapp.com/",
+	},
+	{
+		name: "CodeBook",
+		stacks: ["Flask", "Python", "Jinja", "HTML-CSS", "JavaScript", "Bootstrap"],
+		descBullets: [
+			"Compilation, Execution, and evaluation of user submitted code.",
+			"Users can also post questions and solutions to the community",
+			"Users can follow other coders and get a personalized feed of their activity",
+		],
+		github: "https://github.com/YatharthVyas/CodeBook",
 	},
 ];
 
