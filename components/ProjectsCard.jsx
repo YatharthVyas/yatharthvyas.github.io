@@ -18,13 +18,13 @@ const ProjectsCard = ({ data }) => {
 										{stack}
 									</span>
 								))}
-								<p className="description mt-3">{data.desc}
+								<div className="description mt-3" style={{color:"gray"}}>{data.desc}
 								<ul style={{listStyleType: "square", marginLeft: -10}}>
 									{data.descBullets?.map((bullet, index) => (
 										<li key={index}>{bullet}</li>
 									))}
 								</ul>
-								</p>
+								</div>
 								{data.github ? (
 									<Button
 										className="btn-icon"

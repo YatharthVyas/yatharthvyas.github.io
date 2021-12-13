@@ -25,6 +25,7 @@ const Skills = () => {
 											className="icon icon-lg icon-shape shadow rounded-circle mb-5"
 											id={skill.skillName}
 										>
+											<>
 											<span
 												className="iconify"
 												data-icon={
@@ -32,6 +33,7 @@ const Skills = () => {
 												}
 												data-inline="false"
 											></span>
+											</>
 										</div>
 										<UncontrolledTooltip
 											delay={0}

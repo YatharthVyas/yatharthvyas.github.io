@@ -51,8 +51,8 @@ export default function Home({ githubProfileData }) {
 			<Navigation />
 			<Greetings />
 			<Skills />
-			<hr style={{width: "60%", marginLeft: "20%"}} />
-			<Proficiency />
+			{/* <hr style={{width: "60%", marginLeft: "20%"}} />
+			<Proficiency /> */}
 			<Education />
 			<Experience />
 			<Feedbacks />
