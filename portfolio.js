@@ -179,6 +179,7 @@ export const educationInfo = [
 export const experience = [
 	{
 		role: "Software Engineering Intern",
+		bgColor: "#A33E81",
 		company: "Mahamela Tech",
 		companylogo: "/img/icons/common/mahamela.jpeg",
 		date: "Aug 2021 – Present",
@@ -191,6 +192,7 @@ export const experience = [
 	},
 	{
 		role: "Student Developer",
+		bgColor: "#FCBC05",
 		company: "Google Summer of Code @ Joomla!",
 		companylogo: "/img/icons/common/gsoc.png",
 		companylogo2: "/img/icons/common/joomla.png",
@@ -206,6 +208,7 @@ export const experience = [
 	{
 		role: "Fullstack Developer",
 		company: "Carte",
+		bgColor: "#0C0C0C",
 		companylogo: "/img/icons/common/carte.png",
 		date: "Nov 2020 – March 2021",
 		desc: "A contactless dining application for restaurants. The application is built using ReactJs, NodeJS, MongoDB and deployed using AWS.",
@@ -217,6 +220,7 @@ export const experience = [
 	},
 	{
 		role: "Web Development Intern",
+		bgColor: "#F3F3ED",
 		company: "NK Learnicare",
 		companylogo: "/img/icons/common/nk.jpeg",
 		date: "Jan 2015 – Sep 2015",

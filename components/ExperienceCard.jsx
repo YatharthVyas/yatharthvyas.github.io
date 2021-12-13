@@ -36,11 +36,11 @@ const ExperienceCard = ({ data }) => {
 							className="bg-white rounded-circle mb-3 img-center img-fluid shadow-lg "
 							style={{ width: "100px", height: "100px", flex: 1 , display: "inline-block" }}
 						>
-							<Image
+							<img
 								src={data.companylogo}
 								width={"100px"}
 								height={"100px"}
-								alt={data.companylogo}
+								alt={data.company}
 							/>
 						</span>
 
@@ -49,11 +49,11 @@ const ExperienceCard = ({ data }) => {
 							className="bg-white rounded-circle mb-3 img-center img-fluid shadow-lg "
 							style={{ width: "100px", height: "100px", flex: 1, display: "inline-block", marginLeft: "10px" }}
 						>
-							<Image
+							<img
 								src={data.companylogo2}
 								width={"100px"}
 								height={"100px"}
-								alt={data.companylogo2}
+								alt={data.company}
 							/>
 							</span>
 }
