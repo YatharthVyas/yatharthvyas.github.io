@@ -84,7 +84,7 @@ const Greetings = () => {
 									<div className="text-white" style={{marginTop: 80}}>
 										<h1 className="ml2">Yatharth Vyas</h1>
 									</div>
-									<p className="lead text-white">
+									<div className="lead text-white">
 
 									<h6 className="ml11">
 										<span className="text-wrapper">
@@ -93,7 +93,7 @@ const Greetings = () => {
 										</span>
 									</h6>
 										
-									</p>
+									</div>
 									<SocialLinks />
 									<div className="btn-wrapper my-4">
 										<Button
