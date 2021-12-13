@@ -37,7 +37,7 @@ const ExperienceCard = ({ data }) => {
 							style={{ width: "100px", height: "100px", flex: 1 , display: "inline-block" }}
 						>
 							<img
-								src={process.env.baseAsset + data.companylogo}
+								src={process.env.NEXT_PUBLIC_BASE_PATH + data.companylogo}
 								width={"100px"}
 								height={"100px"}
 								alt={data.company}
