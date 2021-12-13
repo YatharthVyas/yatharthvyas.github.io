@@ -4,12 +4,12 @@
   "description": "I build stuff that helps people in their day to day work.",
     "icons": [
       {
-        "src": "./favicon.png",
+        "src": {process.env.NEXT_PUBLIC_BASE_PATH + "./favicon.png"},
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "./favicon.png",
+        "src": {process.env.NEXT_PUBLIC_BASE_PATH + "./favicon.png"},
         "type": "image/png",
         "sizes": "512x512"
       }

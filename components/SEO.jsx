@@ -27,18 +27,18 @@ function SEO({ data }) {
 			<meta name="robots" content="Index" />
 			<link rel="manifest" href={process.env.NEXT_PUBLIC_BASE_PATH + "/manifest.json"} />
 			{/* Favicon */}
-			<link rel="apple-touch-icon" sizes="120x120" href="./favicon.png" />
+			<link rel="apple-touch-icon" sizes="120x120" href={process.env.NEXT_PUBLIC_BASE_PATH + "./favicon.png"} />
 			<link
 				rel="icon"
 				type="image/png"
 				sizes="32x32"
-				href="./favicon.png"
+				href={process.env.NEXT_PUBLIC_BASE_PATH + "./favicon.png"}
 			/>
 			<link
 				rel="icon"
 				type="image/png"
 				sizes="16x16"
-				href="./favicon.png"
+				href={process.env.NEXT_PUBLIC_BASE_PATH + "./favicon.png"}
 			/>
 			<script
 				async
