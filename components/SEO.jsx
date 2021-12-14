@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import PropTypes from "prop-types";
 
+const basePrefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 function SEO({ data }) {
 	return (
 		<Head>
@@ -25,20 +26,20 @@ function SEO({ data }) {
 			<meta property="twitter:description" content={data.description} />
 			<meta property="twitter:image" content={data.image} />
 			<meta name="robots" content="Index" />
-			<link rel="manifest" href={process.env.NEXT_PUBLIC_BASE_PATH + "/manifest.json"} />
+			<link rel="manifest" href={basePrefix+ "/manifest.json"} />
 			{/* Favicon */}
-			<link rel="apple-touch-icon" sizes="120x120" href={process.env.NEXT_PUBLIC_BASE_PATH + "/favicon.png"} />
+			<link rel="apple-touch-icon" sizes="120x120" href={basePrefix+ "/favicon.png"} />
 			<link
 				rel="icon"
 				type="image/png"
 				sizes="32x32"
-				href={process.env.NEXT_PUBLIC_BASE_PATH + "/favicon.png"}
+				href={basePrefix+ "/favicon.png"}
 			/>
 			<link
 				rel="icon"
 				type="image/png"
 				sizes="16x16"
-				href={process.env.NEXT_PUBLIC_BASE_PATH + "/favicon.png"}
+				href={basePrefix+ "/favicon.png"}
 			/>
 			<script
 				async

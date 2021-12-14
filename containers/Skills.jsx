@@ -6,6 +6,8 @@ import { Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
 import { skillsSection } from "../portfolio";
 
+const basePrefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const Skills = () => {
 	return (
 		<Fade bottom duration={1000} distance="40px">
@@ -14,7 +16,7 @@ const Skills = () => {
 				<p className="lead">{skillsSection.subTitle}</p>
 				<Row>
 					<Col lg="6">
-						<DisplayLottie animationPath={process.env.NEXT_PUBLIC_BASE_PATH + "/lottie/webdev.json"} />
+						<DisplayLottie animationPath={basePrefix+ "/lottie/webdev.json"} />
 					</Col>
 					<Col lg="6">
 						<div className="d-flex justify-content-center flex-wrap mb-5" style={{marginTop: 80}}>

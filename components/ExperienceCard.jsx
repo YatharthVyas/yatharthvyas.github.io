@@ -13,7 +13,8 @@ import {
 import Color from "color-thief-react";
 
 import { Fade } from "react-reveal";
-import Image from "next/image";
+
+const basePrefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const ExperienceCard = ({ data }) => {
 	return (
@@ -23,7 +24,7 @@ const ExperienceCard = ({ data }) => {
 					className="shadow-lg--hover shadow border-0 text-center rounded"
 					style={{ flex: 1, height: "100% !important" }}
 				>
-					<Color src={process.env.NEXT_PUBLIC_BASE_PATH + data.companylogo} format="hex">
+					<Color src={basePrefix + data.companylogo} format="hex">
 						{(color) => (
 							<CardHeader style={{ background: color.data }}>
 								<h5 className={data.company.includes("NK Learnicare") ? "" : "text-white"}>{data.company}</h5>
@@ -37,7 +38,7 @@ const ExperienceCard = ({ data }) => {
 							style={{ width: "100px", height: "100px", flex: 1 , display: "inline-block" }}
 						>
 							<img
-								src={process.env.NEXT_PUBLIC_BASE_PATH + data.companylogo}
+								src={basePrefix + data.companylogo}
 								width={"100px"}
 								height={"100px"}
 								alt={data.company}
@@ -50,7 +51,7 @@ const ExperienceCard = ({ data }) => {
 							style={{ width: "100px", height: "100px", flex: 1, display: "inline-block", marginLeft: "10px" }}
 						>
 							<img
-								src={process.env.NEXT_PUBLIC_BASE_PATH + data.companylogo2}
+								src={basePrefix + data.companylogo2}
 								width={"100px"}
 								height={"100px"}
 								alt={data.company}

@@ -15,11 +15,13 @@ const GithubProfileCard = dynamic(() =>
 import { openSource } from "../portfolio";
 import SEO from "../components/SEO";
 
+const basePrefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Home({ githubProfileData }) {
 	return (
 		<div>
 			<Head>
-				<link rel="shortcute icon" href={process.env.NEXT_PUBLIC_BASE_PATH + "/favicon.png"} />
+				<link rel="shortcute icon" href={basePrefix+ "/favicon.png"} />
 			</Head>
 			<SEO
 				data={{

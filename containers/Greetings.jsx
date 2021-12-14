@@ -5,6 +5,8 @@ import { Button, Container, Row, Col } from "reactstrap";
 import GreetingLottie from "../components/DisplayLottie";
 import SocialLinks from "../components/SocialLinks";
 
+const basePrefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const Greetings = () => {
 	useEffect(() => {
 		document.documentElement.scrollTop = 0;
@@ -111,7 +113,7 @@ const Greetings = () => {
 									</div>
 								</Col>
 								<Col lg="6">
-									<GreetingLottie animationPath={process.env.NEXT_PUBLIC_BASE_PATH +"/lottie/coding.json"} />
+									<GreetingLottie animationPath={basePrefix+"/lottie/coding.json"} />
 								</Col>
 							</Row>
 						</div>
