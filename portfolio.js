@@ -144,6 +144,16 @@ export const SkillBars = [
 export const educationInfo = [
 	{
 		weight: 1,
+		schoolName: "University of California - San Diego",
+		subHeader: "Master of Science in Computer Science",
+		duration: "September 2022 - June 2024 (expected)",
+// 		desc: "",
+// 		descBullets: [
+// 			""
+// 		],
+	},
+	{
+		weight: 1,
 		schoolName: "Dwarkadas J. Sanghvi College of Engineering",
 		subHeader: "Bachelor of Engineering in Computer Science",
 		duration: "July 2018 - June 2022",
