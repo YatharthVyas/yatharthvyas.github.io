@@ -192,10 +192,12 @@ export const experience = [
 		bgColor: "#A33E81",
 		company: "Mahamela Tech",
 		companylogo: "/img/icons/common/mahamela.jpeg",
-		date: "Aug 2021 – Present",
+		date: "Aug 2021 – July 2022",
 		desc: "Optimized Performance and Developed features for the web and native application for the company using ReactNative, NodeJS, MongoDB, GCloud, Firebase and more.",
 		descBullets: [
-			"Developed a Bookkeeping Module for seller-customer ledger records and payments",
+			"Developed a Book-keeping Module for seller-customer ledger records and payments from scratch in the span of just three weeks.",
+			"Integrated international payment gateways, supporting multiple currencies based on their geo-location for global launch.",
+			"Automated generation of template-based customizable splash screens for apps",
 			"Optimized Logo generation by porting the library used from pupeteer to sharp",
 			"Wrote complex SQL queries to substitute ORM calls for user analytics"
 		],
@@ -246,12 +248,13 @@ export const projects = [
 
 	{
 		name: "Infant Emotion Detection using Audio Vistual stream",
-		stacks: ["Python", "Tensorflow", "Keras", "OpenCV", "CVZone", "Transfer Learning"],
+		stacks: ["Python", "Tensorflow", "OpenCV"],
 		descBullets: [
+			"Assembled multiple infant emotion datasets to build the first most universal and generalized dataset with multiple ethnicities.",
+			"Developed a novel algorithm for extracting and pre-processing vectors from facial landmarks that improved the overall accuracy from 54.14% (conventional methods) to 86.06%",
 			"A multi-modal CNN to predict emotions of infants based on audio characteristics of their cry and a video stream",
 			"MFCC is used to extract audio frequencies and is then fed into an ANN.",
-			"Images are sampled from a video at 6 frames per second, augmented to increase dataset size and then used to train an ensemble of 6 Convoluted Neural Networks.",
-			"A total of 5 unique datasets collected from researchers have been combined for training and testing."
+			"Integrated the audio-visual prediction system into an offline hardware solution which is Patent Pending under Government of India."
 		],
 	},
 
@@ -270,7 +273,8 @@ export const projects = [
 		stacks: ["Svelte", "SVG.js", "Vis.js", "JSON"],
 		desc: "This is a simple in browser network simulator, which can be used to visualize network graph and run specific logic code on packets.",
 		descBullets: [
-			"Simulate packet transmission with animations",
+			"Developed an in-browser network simulator that visualizes network graphs and runs specific logic code on handling packet transfer.",
+			"Incorporated a flexible packet handling logic for each network node based on user-input JavaScript methods.",
 			"Implementation of logic and packet queue of any given node is customizable by the user, which means that this can be used to simulate any network algorithm which can be coded using Javascript.",
 		],
 		link: "https://yjdoc2.github.io/Network-Simulator/",
@@ -281,6 +285,8 @@ export const projects = [
 		name: "8086 Emulator Web",
 		stacks: ["ReactJs", "Web Assembly", "Rust"],
 		descBullets: [
+			"Developed a platform-independent web interface that works offline as a PWA. Registered as a Copyright under Government of India.",
+			"Attracted 50k+ unique clicks from Google Search with 26.8% CTR and used in many Indian and European university classrooms.",
 			"Emulates Intel 8086 instruction set and provides an interactive interpreter to run programs in native syntax line by line.",
 			"Error reporting & handling, code highlighting, and code execution is supported.",
 			"Runs without any backend/server and is completely client-side with zero hosting and maintainance required.",
