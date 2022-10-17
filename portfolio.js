@@ -5,7 +5,7 @@ export const greetings = {
 	title: "Yatharth Vyas",
 	description:
 		"I build stuff that people use",
-	resumeLink: "https://drive.google.com/file/d/1xr77wY2opAzo9HhHjOcUByeY2Dt1YNUd",
+	resumeLink: "https://drive.google.com/file/d/1dipUWqkd6G9K7hJEvhrQRd2gFJZaLVx_",
 };
 
 export const openSource = {
